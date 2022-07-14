@@ -14,9 +14,19 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let sum = 0; 
+
+  for (let i = 0; i < arrayOfNumbers.length; i++)
+    sum += arrayOfNumbers[i];
+  
+  return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+
+let arrayOfNumbers = [3, 7, 9, 5];
+
+console.log("Sum of given array is " + sumOfNumbers(arrayOfNumbers));
+
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -27,10 +37,29 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+function countEvenNumbers(array, array_size) {
+  let even_count = 0;
+  let odd_count = 0;
+
+  for (let i = 0; i < array_size; i++){
+
+    if (array[i] & 1==1)
+      odd_count++;
+    else
+      even_count++;
+  }
+  
+ console.log("Number of even elements = " + even_count);
+  
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+let array = [3,6,9,12,97,56,86,46,34,89,40,57]
+let n = array.length;
+
+countEvenNumbers(array, n);
+
+assignment.countEvenNumbers = countEvenNumbers;
+
 
 /**
  * Challenge - 3
@@ -57,3 +86,8 @@ function celsiusToFahrenheit(arrayOfNumbers) {
 module.exports = assignment;
 // ========================
 
+
+
+
+
+       
