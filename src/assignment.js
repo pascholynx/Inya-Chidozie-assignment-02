@@ -38,7 +38,7 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 
-function countEvenNumbers(arrayOfNumbers) {
+function countEvenNumbers1(arrayOfNumbers) {
   let even_count = 0;
   let odd_count = 0;
 
@@ -54,9 +54,11 @@ function countEvenNumbers(arrayOfNumbers) {
   
 }
 
-countEvenNumbers(arrayOfNumbers);
 
-assignment.countEvenNumbers = countEvenNumbers;
+
+countEvenNumbers1(arrayOfNumbers);
+
+assignment.countEvenNumbers1 = countEvenNumbers1;
 
 
 /**
