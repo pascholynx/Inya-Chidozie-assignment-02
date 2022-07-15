@@ -14,7 +14,6 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-  return arrayOfNumbers.length;
   let sum = 0; 
 
   for (let i = 0; i < arrayOfNumbers.length; i++)
@@ -23,7 +22,7 @@ function sumOfNumbers(arrayOfNumbers) {
   return sum;
 }
 
-let arrayOfNumbers = [3, 7, 9, 5];
+let arrayOfNumbers = [5, 7, 9, 5];
 
 console.log("Sum of given array is " + sumOfNumbers(arrayOfNumbers));
 
@@ -60,7 +59,7 @@ let n = array.length;
 
 countEvenNumbers(array, n);
 
-assignment.countEvenNumbers = countEvenNumbers;
+//assignment.countEvenNumbers = countEvenNumbers;
 
 
 /**
