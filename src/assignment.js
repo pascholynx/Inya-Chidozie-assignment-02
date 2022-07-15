@@ -59,7 +59,7 @@ let n = array.length;
 
 countEvenNumbers(array, n);
 
-//assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers = countEvenNumbers;
 
 
 /**
