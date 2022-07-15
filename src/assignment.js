@@ -22,7 +22,7 @@ function sumOfNumbers(arrayOfNumbers) {
   return sum;
 }
 
-let arrayOfNumbers = [5, 7, 9, 5];
+const arrayOfNumbers = [2, 4, 8, 10, 5, 67, 42, 12]; //The array of numbers
 
 console.log("Sum of given array is " + sumOfNumbers(arrayOfNumbers));
 
@@ -38,13 +38,13 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 
-function countEvenNumbers(array, array_size) {
+function countEvenNumbers(arrayOfNumbers) {
   let even_count = 0;
   let odd_count = 0;
 
-  for (let i = 0; i < array_size; i++){
+  for (let i = 0; i < arrayOfNumbers.length; i++){
 
-    if (array[i] & 1==1)
+    if (arrayOfNumbers[i] & 1==1)
       odd_count++;
     else
       even_count++;
@@ -54,10 +54,7 @@ function countEvenNumbers(array, array_size) {
   
 }
 
-let array = [3,6,9,12,97,56,86,46,34,89,40,57]
-let n = array.length;
-
-countEvenNumbers(array, n);
+countEvenNumbers(arrayOfNumbers);
 
 assignment.countEvenNumbers = countEvenNumbers;
 
